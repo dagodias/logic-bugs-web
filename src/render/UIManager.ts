@@ -75,6 +75,7 @@ export class UIManager {
     tela.appendChild(this.criarSecaoMecanicas());
     tela.appendChild(this.criarSecaoStats());
     tela.appendChild(this.criarSecaoCtaFinal());
+    tela.appendChild(this.criarRodapeCreditos());
     this.containerUI.appendChild(tela);
     this.telaAtual = tela;
     iniciarAtmosfera(tela);
@@ -390,6 +391,21 @@ export class UIManager {
     sec.appendChild(rodape);
 
     return sec;
+  }
+
+  /**
+   * Rodapé de créditos / licença GPL. Aparece no final da home (depois do CTA).
+   * Cumpre GPL v2 §3(a): link para o source no mesmo lugar que o binário.
+   */
+  private criarRodapeCreditos(): HTMLElement {
+    const rodape = document.createElement('footer');
+    rodape.className = 'creditos-licenca';
+    rodape.innerHTML =
+      'Fases originais do <a href="https://www.anakreon.cz/berusky1.html" target="_blank" rel="noopener">Berusky</a> ' +
+      'por Anakreon (Stránský &amp; Doležal) · ' +
+      '<a href="https://github.com/dagodias/logic-bugs-web/blob/main/LICENSE" target="_blank" rel="noopener">GPL v2+</a> · ' +
+      '<a href="https://github.com/dagodias/logic-bugs-web" target="_blank" rel="noopener">código-fonte</a>';
+    return rodape;
   }
 
   /**

@@ -2864,11 +2864,8 @@ body.home-ativa .dicas-teclas {
   display: none;
 }
 
-/* Créditos / licença GPL — visível apenas na home, como rodapé natural (não fixo) */
+/* Créditos / licença GPL — rodapé natural da home (montado pelo UIManager dentro de .tela-inicial) */
 .creditos-licenca {
-  display: none;
-}
-body.home-ativa .creditos-licenca {
   display: block;
   padding: 24px 16px 40px;
   font-size: 11px;
@@ -2880,4 +2877,5 @@ body.home-ativa .creditos-licenca {
 }
 .creditos-licenca a {
   color: #aac;
+  text-decoration: underline;
 }

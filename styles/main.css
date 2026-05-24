@@ -2863,3 +2863,25 @@ body.home-ativa .tela-inicial-hero .revelar {
 body.home-ativa .dicas-teclas {
   display: none;
 }
+
+/* Créditos / licença GPL — visível apenas na home */
+.creditos-licenca {
+  display: none;
+}
+body.home-ativa .creditos-licenca {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 12px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #888;
+  background: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  z-index: 1;
+}
+.creditos-licenca a {
+  color: #aac;
+}

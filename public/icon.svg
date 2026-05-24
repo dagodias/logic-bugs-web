@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1f3a26"/>
+      <stop offset="60%" stop-color="#0e1b14"/>
+      <stop offset="100%" stop-color="#050807"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#fbbf24" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#92400e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="corpo" cx="40%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#7d5a2a"/>
+      <stop offset="100%" stop-color="#2a1810"/>
+    </radialGradient>
+    <linearGradient id="asa" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <circle cx="350" cy="256" r="160" fill="url(#halo)" filter="url(#glow)" opacity="0.85"/>
+
+  <g transform="translate(256 256)">
+    <ellipse cx="-30" cy="-70" rx="80" ry="40" fill="url(#asa)" opacity="0.85" transform="rotate(-18)"/>
+    <ellipse cx="-30" cy="70" rx="80" ry="40" fill="url(#asa)" opacity="0.85" transform="rotate(18)"/>
+
+    <ellipse cx="0" cy="0" rx="105" ry="55" fill="url(#corpo)"/>
+    <ellipse cx="-30" cy="-8" rx="78" ry="38" fill="#3d2817" opacity="0.5"/>
+
+    <circle cx="-72" cy="0" r="28" fill="#1a0e08"/>
+    <circle cx="-78" cy="-8" r="6" fill="#fef9c3"/>
+
+    <path d="M-90 -10 Q-115 -40 -125 -65" stroke="#1a0e08" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M-90 10 Q-115 40 -125 65" stroke="#1a0e08" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="-125" cy="-65" r="5" fill="#fbbf24"/>
+    <circle cx="-125" cy="65" r="5" fill="#fbbf24"/>
+
+    <circle cx="70" cy="0" r="38" fill="url(#halo)" filter="url(#glow)"/>
+    <circle cx="70" cy="0" r="18" fill="#fef9c3"/>
+    <circle cx="70" cy="0" r="8" fill="#fffbeb"/>
+  </g>
+</svg>

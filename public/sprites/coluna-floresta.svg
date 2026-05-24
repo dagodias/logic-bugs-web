@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="fnd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1810"/>
+      <stop offset="50%" stop-color="#0a140d"/>
+      <stop offset="100%" stop-color="#050a07"/>
+    </linearGradient>
+    <radialGradient id="luaG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#fbbf24" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2812" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a1408" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="trB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d4732" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0f1f15" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="chao" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="60%" stop-color="#0a1408" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#050a05" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="280" height="900" fill="url(#fnd)"/>
+
+  <!-- Lua âmbar ao fundo -->
+  <circle cx="210" cy="120" r="60" fill="url(#luaG)"/>
+  <circle cx="210" cy="120" r="22" fill="#fbbf24" opacity="0.55"/>
+  <circle cx="210" cy="120" r="12" fill="#fef3c7" opacity="0.85"/>
+
+  <!-- Árvores distantes (camada 1 — silhuetas claras) -->
+  <g opacity="0.55">
+    <path d="M30 380 Q35 360 32 340 Q28 320 35 300 Q25 320 22 350 Q20 380 30 380 Z" fill="url(#trB)"/>
+    <path d="M70 400 Q78 370 73 345 Q68 320 78 300 Q60 320 58 360 Q56 400 70 400 Z" fill="url(#trB)"/>
+    <path d="M120 410 Q128 380 124 350 Q120 320 130 300 Q112 320 108 360 Q104 410 120 410 Z" fill="url(#trB)"/>
+    <path d="M180 390 Q188 360 184 335 Q180 310 190 290 Q172 310 168 350 Q164 390 180 390 Z" fill="url(#trB)"/>
+    <path d="M240 395 Q248 365 244 340 Q240 315 250 295 Q232 315 228 355 Q224 395 240 395 Z" fill="url(#trB)"/>
+  </g>
+
+  <!-- Árvores médias (camada 2) -->
+  <g opacity="0.85">
+    <!-- Tronco + copa estilo conífera -->
+    <path d="M50 560 L46 460 L54 460 Z" fill="#1a0e08"/>
+    <path d="M40 480 L60 480 L50 420 Z" fill="url(#trA)"/>
+    <path d="M38 510 L62 510 L50 450 Z" fill="url(#trA)"/>
+    <path d="M36 540 L64 540 L50 480 Z" fill="url(#trA)"/>
+
+    <path d="M150 580 L146 480 L154 480 Z" fill="#1a0e08"/>
+    <path d="M138 500 L162 500 L150 430 Z" fill="url(#trA)"/>
+    <path d="M135 530 L165 530 L150 465 Z" fill="url(#trA)"/>
+    <path d="M132 560 L168 560 L150 495 Z" fill="url(#trA)"/>
+
+    <path d="M230 570 L226 470 L234 470 Z" fill="#1a0e08"/>
+    <path d="M220 490 L240 490 L230 430 Z" fill="url(#trA)"/>
+    <path d="M218 520 L242 520 L230 460 Z" fill="url(#trA)"/>
+    <path d="M216 550 L244 550 L230 490 Z" fill="url(#trA)"/>
+  </g>
+
+  <!-- Árvores próximas (camada 3 — folhagem larga) -->
+  <g>
+    <!-- Tronco grosso lateral esquerda -->
+    <path d="M0 900 L0 580 Q5 540 8 520 Q12 540 18 560 Q22 580 28 600 Q24 720 22 900 Z" fill="#1a0e08" opacity="0.95"/>
+    <ellipse cx="14" cy="500" rx="38" ry="60" fill="#0a1408" opacity="0.9"/>
+    <ellipse cx="5" cy="530" rx="28" ry="40" fill="#1a2812" opacity="0.8"/>
+
+    <!-- Tronco lateral direita -->
+    <path d="M280 900 L280 600 Q272 565 268 540 Q260 565 252 590 Q256 720 258 900 Z" fill="#1a0e08" opacity="0.95"/>
+    <ellipse cx="266" cy="520" rx="42" ry="65" fill="#0a1408" opacity="0.9"/>
+    <ellipse cx="276" cy="550" rx="30" ry="45" fill="#1a2812" opacity="0.8"/>
+
+    <!-- Raízes/arbustos no chão -->
+    <path d="M80 900 Q90 820 95 760 Q100 820 110 900 Z" fill="#0a1408" opacity="0.85"/>
+    <path d="M180 900 Q188 830 195 770 Q205 830 215 900 Z" fill="#0a1408" opacity="0.85"/>
+    <ellipse cx="100" cy="780" rx="22" ry="18" fill="#1a2812" opacity="0.55"/>
+    <ellipse cx="195" cy="790" rx="20" ry="15" fill="#1a2812" opacity="0.55"/>
+  </g>
+
+  <!-- Sombra do chao -->
+  <rect width="280" height="900" fill="url(#chao)"/>
+
+  <!-- Vagalumes (estaticos no SVG, animacao via CSS no proprio elemento decorativo) -->
+  <g opacity="0.9">
+    <circle cx="80" cy="350" r="2" fill="#fef3c7"/>
+    <circle cx="80" cy="350" r="5" fill="#fbbf24" opacity="0.35"/>
+    <circle cx="140" cy="280" r="1.5" fill="#fef3c7"/>
+    <circle cx="140" cy="280" r="4" fill="#fbbf24" opacity="0.35"/>
+    <circle cx="200" cy="420" r="2" fill="#fef3c7"/>
+    <circle cx="200" cy="420" r="5" fill="#fbbf24" opacity="0.35"/>
+    <circle cx="55" cy="640" r="1.5" fill="#fef3c7"/>
+    <circle cx="55" cy="640" r="4" fill="#fbbf24" opacity="0.35"/>
+    <circle cx="225" cy="700" r="2" fill="#fef3c7"/>
+    <circle cx="225" cy="700" r="5" fill="#fbbf24" opacity="0.35"/>
+  </g>
+</svg>

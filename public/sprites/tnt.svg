@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+  <defs>
+    <linearGradient id="tntCorpo" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a2020"/>
+      <stop offset="50%" stop-color="#5b1010"/>
+      <stop offset="100%" stop-color="#2a0606"/>
+    </linearGradient>
+    <linearGradient id="tntAro" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a5328"/>
+      <stop offset="100%" stop-color="#3d2817"/>
+    </linearGradient>
+    <radialGradient id="tntFaisca" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="40%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="50" cy="92" rx="32" ry="4" fill="#000" opacity="0.4"/>
+  <rect x="22" y="32" width="56" height="56" rx="3" fill="url(#tntCorpo)" stroke="#1a0606" stroke-width="2"/>
+  <rect x="22" y="36" width="56" height="6" fill="url(#tntAro)" stroke="#1a0606" stroke-width="1"/>
+  <rect x="22" y="76" width="56" height="6" fill="url(#tntAro)" stroke="#1a0606" stroke-width="1"/>
+  <text x="50" y="64" text-anchor="middle" font-family="Impact, sans-serif" font-size="22" font-weight="bold" fill="#fbbf24" stroke="#1a0606" stroke-width="0.8">TNT</text>
+  <path d="M50 32 Q44 22 50 14 Q56 8 48 4" stroke="#5e3d22" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M50 32 Q44 22 50 14 Q56 8 48 4" stroke="#a8763a" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <circle cx="48" cy="4" r="6" fill="url(#tntFaisca)">
+    <animate attributeName="r" values="5;8;5" dur="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="48" cy="4" r="2" fill="#fef3c7"/>
+</svg>

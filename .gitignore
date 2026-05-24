@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Cache
+.vite/
+.tsbuildinfo
+vendor/
+
+# Internal docs, deploy scripts and infra config — contain server IP/user/paths.
+# Kept locally for personal use, NEVER pushed to the public repo.
+docs/
+deploy/
+scripts/
+.claude/
+tools/
+
+# Auto-generated artifacts not needed in repo
+tsconfig.tsbuildinfo

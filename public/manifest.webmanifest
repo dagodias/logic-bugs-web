@@ -1,0 +1,27 @@
+{
+  "name": "Logic Bugs",
+  "short_name": "Logic Bugs",
+  "description": "Jogo de puzzle 2D em grade. Pequenos engenheiros, grandes labirintos.",
+  "start_url": "/logic-bugs/",
+  "scope": "/logic-bugs/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0a0e1a",
+  "theme_color": "#1f3a26",
+  "lang": "pt-BR",
+  "categories": ["games", "puzzle", "education"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    }
+  ]
+}

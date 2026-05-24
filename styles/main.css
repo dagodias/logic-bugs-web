@@ -2864,23 +2864,19 @@ body.home-ativa .dicas-teclas {
   display: none;
 }
 
-/* Créditos / licença GPL — visível apenas na home */
+/* Créditos / licença GPL — visível apenas na home, como rodapé natural (não fixo) */
 .creditos-licenca {
   display: none;
 }
 body.home-ativa .creditos-licenca {
   display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 6px 12px;
+  padding: 24px 16px 40px;
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #888;
-  background: rgba(0, 0, 0, 0.35);
   text-align: center;
-  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 32px;
 }
 .creditos-licenca a {
   color: #aac;
